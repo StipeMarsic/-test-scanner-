@@ -42,7 +42,7 @@ jobs:
         body: |
           # Test Scanner APK
           
-          Automatski izgrađena APK datoteka za Test Scanner aplikaciju.
+          Minimalna verzija Test Scanner aplikacije.
           
           ## Instalacija:
           1. Preuzmite APK datoteku
@@ -50,9 +50,8 @@ jobs:
           3. Instalirajte APK datoteku
           
           ## Funkcionalnosti:
-          - Skeniranje testova kamerom
-          - OCR prepoznavanje teksta
-          - AI analiza odgovora
-          - Automatsko ocjenjivanje
+          - Osnovni UI
+          - Priprema za kamera funkcionalnost
+          - Priprema za OCR funkcionalnost
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
