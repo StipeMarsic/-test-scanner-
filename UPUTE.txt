@@ -1,0 +1,91 @@
+TEST SCANNER - UPUTE ZA KORIŠTENJE
+=====================================
+
+ŠTO JE TEST SCANNER?
+-------------------
+Test Scanner je mobilna aplikacija za profesore koja omogućava automatsko skeniranje 
+i ocjenjivanje rukom pisanih testova koristeći kameru mobitela i AI tehnologiju.
+
+KAKO POKRENUTI APLIKACIJU:
+--------------------------
+1. Otvorite Command Prompt ili PowerShell
+2. Navigirajte do mape s projektom: cd 2
+3. Pokrenite: flutter pub get
+4. Pokrenite: flutter run
+5. Ili jednostavno pokrenite: run_app.bat
+
+KAKO KORISTITI:
+--------------
+1. POKRETANJE SKENIRANJA:
+   - Otvorite aplikaciju
+   - Odaberite "Skeniraj Test" za kameru
+   - Ili "Odaberi iz Galerije" za postojeću fotografiju
+
+2. FOTOGRAFIRANJE:
+   - Postavite test na ravnu površinu
+   - Osigurajte dovoljno svjetla
+   - Usmjerite kameru na cijeli test
+   - Pritisnite gumb za fotografiranje
+
+3. UNOS INFORMACIJA:
+   - Unesite ime učenika
+   - Unesite naziv testa
+   - Postavite točne odgovore za svako pitanje
+   - Pregledajte prepoznati tekst i po potrebi ispravite
+
+4. ANALIZA I OCJENJIVANJE:
+   - Pritisnite "Analiziraj Test"
+   - Pregledajte AI analizu
+   - Po potrebi ispravite AI procjene
+   - Spremite konačnu ocjenu
+
+PREPORUČENI FORMAT TESTA:
+------------------------
+- Jasno rukom pisani tekst
+- Numerirana pitanja (1., 2., 3., itd.)
+- Odgovori označeni slovima (A, B, C, D) ili brojevima
+- Dovoljno svjetla za fotografiranje
+- Ravna površina bez sjaja
+
+SUSTAV OCJENJIVANJA:
+-------------------
+- Hrvatski sustav: 1-5 (1 = nedovoljan, 5 = odličan)
+- Postotak: 0-100%
+- Bodovi: 0-100 bodova
+- Prilagođeno: Prema potrebama profesora
+
+RJEŠAVANJE PROBLEMA:
+-------------------
+1. Kamera se ne pokreće:
+   - Provjerite dozvole za kameru
+   - Restart aplikacije
+
+2. OCR ne prepoznaje tekst:
+   - Poboljšajte osvjetljenje
+   - Osigurajte jasno pisanje
+   - Provjerite fokus kamere
+
+3. Aplikacija se ruši:
+   - Provjerite Flutter verziju
+   - Očistite cache: flutter clean
+   - Ponovno instalirajte dependencies
+
+SAVJETI ZA BOLJE REZULTATE:
+--------------------------
+- Koristite dobro osvjetljenje
+- Osigurajte da je cijeli test vidljiv
+- Koristite ravnu površinu
+- Izbjegavajte sjaj i sjene
+- Provjerite fokus kamere prije fotografiranja
+
+PODRŠKA:
+--------
+Za dodatnu podršku i pitanja:
+- Pregledajte README.md datoteku
+- Provjerite Flutter dokumentaciju
+- Kontaktirajte razvojni tim
+
+NAPOMENA:
+---------
+Ova aplikacija je namijenjena kao pomagalo za profesore. 
+Konačne ocjene uvijek trebaju biti potvrđene od strane profesora.

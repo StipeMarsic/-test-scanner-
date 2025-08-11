@@ -1,0 +1,34 @@
+========================================
+RUČNA INSTALACIJA APK DATOTEKE
+========================================
+
+AKO AUTOMATSKA INSTALACIJA NE RADI, SLIJEDITE OVE KORAKE:
+
+1. IZGRADNJA APK DATOTEKE:
+   - Otvorite Command Prompt u direktoriju projekta
+   - Pokrenite: flutter build apk --release
+   - APK datoteka će biti kreirana u: build/app/outputs/flutter-apk/app-release.apk
+
+2. PREBACIVANJE NA MOBITEL:
+   - Kopirajte app-release.apk na mobitel (USB, email, cloud, itd.)
+   - Ili koristite: adb push build/app/outputs/flutter-apk/app-release.apk /sdcard/
+
+3. INSTALACIJA NA ANDROID:
+   - Na mobitelu idite u Postavke > Sigurnost
+   - Omogućite "Nepoznati izvori" (Unknown sources)
+   - Pronađite APK datoteku u File Manageru
+   - Tapnite na APK datoteku za instalaciju
+   - Slijedite upute na ekranu
+
+4. ALTERNATIVNO - ADB INSTALACIJA:
+   - Povežite mobitel s računalom preko USB-a
+   - Omogućite USB debugging u Developer options
+   - Pokrenite: adb install build/app/outputs/flutter-apk/app-release.apk
+
+5. RJEŠAVANJE PROBLEMA:
+   - Ako se instalacija neće pokrenuti, provjerite jesu li omogućeni "Nepoznati izvori"
+   - Ako aplikacija neće raditi, provjerite jesu li sve dozvole omogućene
+   - Za stare Android verzije možda trebate omogućiti "Instalacija izvan Play Storea"
+
+NAPOMENA: Ova aplikacija nije potpisana, pa će Android prikazati upozorenje o sigurnosti.
+To je normalno za aplikacije koje nisu preuzete iz Google Play Storea.

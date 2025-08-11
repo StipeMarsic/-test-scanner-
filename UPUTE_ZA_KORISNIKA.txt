@@ -1,0 +1,90 @@
+========================================
+TEST SCANNER - UPUTE ZA KORISNIKA
+========================================
+
+🎯 ŠTO JE TEST SCANNER?
+Test Scanner je mobilna aplikacija koja omogućava profesorima da
+skeniraju rukom pisane testove kamerom mobitela i automatski dobiju
+ocjene za učenike.
+
+📱 KAKO INSTALIRATI NA MOBITEL:
+
+OPCIJA 1 - AUTOMATSKI (PREPORUČENO):
+1. Pokrenite "BRZI_START.bat" ili "INSTALIRAJ_APK.bat"
+2. Slijedite upute na ekranu
+3. Aplikacija će se automatski instalirati na povezani mobitel
+
+OPCIJA 2 - RUČNO:
+1. Pokrenite "INSTALIRAJ_NA_MOBITEL.bat"
+2. Odaberite opciju 3 za Android
+3. Kopirajte APK datoteku na mobitel
+4. Instalirajte ručno
+
+🔧 PRIJE INSTALACIJE:
+- Povežite mobitel s računalom preko USB-a
+- Omogućite "USB debugging" u Developer options
+- Omogućite "Nepoznati izvori" u Postavke > Sigurnost
+
+📖 KAKO KORISTITI APLIKACIJU:
+
+1. POKRETANJE:
+   - Tapnite na ikonu Test Scanner na mobitelu
+   - Aplikacija će tražiti dozvole za kameru i datoteke
+
+2. SKENIRANJE TESTA:
+   - Tapnite "Skeniraj Test"
+   - Postavite test u okvir kamere
+   - Osigurajte dovoljno svjetla
+   - Tapnite crveni gumb za snimanje
+
+3. UNOS INFORMACIJA:
+   - Unesite ime učenika
+   - Unesite naziv testa
+   - Postavite točne odgovore (A, B, C, D)
+   - Pregledajte prepoznate odgovore učenika
+
+4. ANALIZA I OCJENJIVANJE:
+   - Tapnite "Analiziraj Test"
+   - Pregledajte rezultate
+   - Ispravite greške ako ih ima
+   - Spremite ocjenu
+
+🎯 PREPORUČENI FORMAT TESTA:
+- Jasno pisana pitanja s brojevima (1., 2., 3., itd.)
+- Odgovori označeni slovima (A, B, C, D)
+- Dovoljno svjetla i kontrasta
+- Test postavljen na ravnu površinu
+
+📊 SUSTAV OCJENJIVANJA:
+- 90-100% = Odličan (5)
+- 80-89% = Vrlo dobar (4)
+- 70-79% = Dobar (3)
+- 60-69% = Dovoljan (2)
+- 0-59% = Nedovoljan (1)
+
+🛠️ RJEŠAVANJE PROBLEMA:
+
+Aplikacija se neće instalirati:
+- Provjerite jesu li omogućeni "Nepoznati izvori"
+- Pokušajte s ADB instalacijom
+- Provjerite ima li dovoljno prostora
+
+Aplikacija se neće pokrenuti:
+- Provjerite jesu li kamera dozvole omogućene
+- Restartajte mobitel
+- Provjerite Android verziju (minimalno 5.0)
+
+Skeniranje ne radi dobro:
+- Osigurajte dovoljno svjetla
+- Postavite test na ravnu površinu
+- Provjerite jesu li pitanja jasno vidljiva
+
+📞 PODRŠKA:
+Ako imate problema, provjerite:
+- Flutter instalaciju: flutter doctor
+- Dostupne uređaje: flutter devices
+- Logove aplikacije: flutter logs
+
+🎉 USPIJEŠNA INSTALACIJA!
+Nakon instalacije možete početi skenirati testove i automatski
+dobivati ocjene za svoje učenike!

@@ -1,0 +1,58 @@
+name: Build Test Scanner APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Build APK
+      run: flutter build apk --release
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-scanner-apk
+        path: build/app/outputs/flutter-apk/app-release.apk
+
+    - name: Create Release
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/app/outputs/flutter-apk/app-release.apk
+        tag_name: v1.0.0
+        name: Test Scanner v1.0.0
+        body: |
+          # Test Scanner APK
+          
+          Automatski izgrađena APK datoteka za Test Scanner aplikaciju.
+          
+          ## Instalacija:
+          1. Preuzmite APK datoteku
+          2. Omogućite "Nepoznati izvori" na Android uređaju
+          3. Instalirajte APK datoteku
+          
+          ## Funkcionalnosti:
+          - Skeniranje testova kamerom
+          - OCR prepoznavanje teksta
+          - AI analiza odgovora
+          - Automatsko ocjenjivanje
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
